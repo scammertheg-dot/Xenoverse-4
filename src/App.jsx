@@ -106,6 +106,7 @@ export default function App() {
                   className="w-full h-full border-none"
                   allowFullScreen
                   title={selectedGame.title}
+                  sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation"
                 />
               </div>
 
