@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "description": "Join the numbers and get to the 2048 tile!",
+    "url": "https://play2048.co/",
+    "thumbnail": "https://picsum.photos/seed/2048/400/300",
+    "category": "Puzzle"
+  },
+  {
+    "id": "hextris",
+    "title": "Hextris",
+    "description": "Fast-paced puzzle game inspired by Tetris.",
+    "url": "https://hextris.io/",
+    "thumbnail": "https://picsum.photos/seed/hextris/400/300",
+    "category": "Arcade"
+  },
+  {
+    "id": "slope",
+    "title": "Slope",
+    "description": "Drive a ball down a high-speed slope.",
+    "url": "https://kdata1.com/2020/05/slope/",
+    "thumbnail": "https://picsum.photos/seed/slope/400/300",
+    "category": "Action"
+  },
+  {
+    "id": "doodle-jump",
+    "title": "Doodle Jump",
+    "description": "Jump as high as you can in this classic arcade game.",
+    "url": "https://doodlejump.io/game/",
+    "thumbnail": "https://picsum.photos/seed/doodle/400/300",
+    "category": "Arcade"
+  },
+  {
+    "id": "paper-io-2",
+    "title": "Paper.io 2",
+    "description": "Capture as much territory as possible.",
+    "url": "https://paper-io.com/",
+    "thumbnail": "https://picsum.photos/seed/paper/400/300",
+    "category": "IO"
+  },
+  {
+    "id": "retro-bowl",
+    "title": "Retro Bowl",
+    "description": "The perfect game for the armchair quarterback.",
+    "url": "https://game316411.konggames.com/gamez/0031/6411/live/index.html",
+    "thumbnail": "https://picsum.photos/seed/football/400/300",
+    "category": "Sports"
+  }
+]
