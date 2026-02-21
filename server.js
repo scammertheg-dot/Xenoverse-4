@@ -19,18 +19,19 @@ async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },
-      appType: 'custom', // Changed to custom to handle index.html manually
+      appType: 'custom',
     });
     app.use(vite.middlewares);
 
     app.get('*', async (req, res, next) => {
-      const url = req.originalUrl;
+      if (req.originalUrl.startsWith('/api')) {
+        return next();
+      }
+
       try {
-        // 1. Read index.html
+        const url = req.originalUrl;
         let template = await fs.readFile(path.resolve(__dirname, 'index.html'), 'utf-8');
-        // 2. Apply Vite HTML transforms
         template = await vite.transformIndexHtml(url, template);
-        // 3. Send the rendered HTML
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } catch (e) {
         vite.ssrFixStacktrace(e);
